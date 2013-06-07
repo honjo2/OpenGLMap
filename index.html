@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">  <!-- Use Chrome Frame in IE -->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>タイトル</title>
+    <script src="Cesium/Cesium.js"></script>
+    <script src="GoogleMapImageryProvider.js"></script>
+</head>
+<body>
+    <style>
+    @import url(style.css);
+    </style>
+    <div id="noWebGLWarning" class="hide">
+        <p id="noWebGlText">
+            <span class="red">
+                Cesium requires <a href='http://www.khronos.org/webgl/' target='_blank'>WebGL</a>, an open
+                standard for displaying 3D content in a web browser. Unfortunately, your browser
+                <span class="bold">does not appear to support</span> WebGL.
+            </span>
+            <br><br>
+            Internet Explorer users can install the
+            <a href="http://code.google.com/chrome/chromeframe/" target='_blank'>Chrome Frame</a> plug-in,
+            otherwise try a WebGL-compatible browser, such as
+            <a href="https://www.google.com/chrome" target='_blank'>Chrome</a> or
+            <a href="http://www.firefox.com" target='_blank'>Firefox</a>. For the best experience, it is
+            recommended to update your video card drivers
+            (<a href="http://www.nvidia.com/Download/index.aspx" target="_blank">NVIDIA</a> |
+            <a href="http://support.amd.com/us/gpudownload/Pages/index.aspx" target="_blank">AMD</a>) as well.
+        </p>
+    </div>    
+    
+    <div id="cesiumContainer" class="fullSize"></div>
+    <div id="viewButtons">
+        <div id="sceneModePickerContainer"></div>
+    </div>
+    <div id="fullscreenContainer"></div>
+
+    <script src="mapapp.js"></script>
+</body>
+</html>
